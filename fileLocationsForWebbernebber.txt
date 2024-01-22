@@ -1,0 +1,38 @@
+webmanager installed from pip python
+C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\selenium\webdriver\chromium
+
+chromedriver can be installed from ChromeDriverManager().install()
+newly installed drivers will be sent here:
+C:\Users\david\.wdm\drivers\chromedriver\win32
+
+
+Chromium Download from rendering Webpage for Schedule of Classes:
+---preferrablly to not install python from windows store
+https://www.reddit.com/r/learnpython/comments/gtunuy/requestshtml_script_throwing_error_when/
+==========================================================================
+PS C:\Users\david\.vscode\VSFiles\Miscellaneous> python webberReq.py
+[INFO] Starting Chromium download.
+100%|█████████████████████████████████████████████████████████████████| 137M/137M [00:13<00:00, 10.4Mb/s]
+[INFO] Beginning extraction
+[INFO] Chromium extracted to: C:\Users\david\AppData\Local\pyppeteer\pyppeteer\local-chromium\588429
+Traceback (most recent call last):
+  File "C:\Users\david\.vscode\VSFiles\Miscellaneous\webberReq.py", line 14, in <module>
+    sesReq.html.render()
+  File "C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\requests_html.py", line 586, in render
+    self.browser = self.session.browser  # Automatically create a event loop and browser
+  File "C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\requests_html.py", line 730, in browser
+    self._browser = self.loop.run_until_complete(super().browser)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.1264.0_x64__qbz5n2kfra8p0\lib\asyncio\base_events.py", line 646, in run_until_complete
+    return future.result()
+  File "C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\requests_html.py", line 714, in browser
+    self._browser = await pyppeteer.launch(ignoreHTTPSErrors=not(self.verify), headless=True, args=self.__browser_args)
+  File "C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pyppeteer\launcher.py", line 307, in launch
+    return await Launcher(options, **kwargs).launch()
+  File "C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pyppeteer\launcher.py", line 148, in launch
+    self.proc = subprocess.Popen(  # type: ignore
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.1264.0_x64__qbz5n2kfra8p0\lib\subprocess.py", line 966, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.1264.0_x64__qbz5n2kfra8p0\lib\subprocess.py", line 1435, in _execute_child        
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+OSError: [WinError 14001] The application has failed to start because its side-by-side configuration is incorrect. Please see the application event log or use the command-line sxstrace.exe tool for more detail
+===================================================================================================================================

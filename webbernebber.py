@@ -102,7 +102,3 @@ if (not result):
     bakeCookies()
     beginRegistering(sem, sectionNums)
 print(sem, sectionNums)
-whyareulikethis = 1
-whyareulikethis = whyareulikethis + 6
-print("something" + str(whyareulikethis))
-exec(open(r"printingSomethingBrodie.py").read())
