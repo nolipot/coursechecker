@@ -1,0 +1,22 @@
+#testheader {
+    color: cornflowerblue;
+    text-align: center;
+    background-color: brown;
+    border: 3px solid black;
+    position: absolute;
+    top: 0px;
+    left: 50px;
+    margin: 50px;
+}/* rule sets */
+#testdiv {
+    color: cornflowerblue;
+    text-align: center;
+    background-color: yellow;
+    border: 0px solid grey;
+    margin: 0px;
+    position: relative;
+    top: 0px;
+}
+body {
+    margin: 0px;
+}
